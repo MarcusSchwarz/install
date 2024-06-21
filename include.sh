@@ -87,7 +87,7 @@ function install_dependencies() {
     # shellcheck source=/dev/null
     source "${VENV_DIR}/bin/activate"
     # install python dependencies via pip3
-    pip3 install ${PIP_INSTALL_OPTS} --upgrade setuptools==60.8.2 wheel==0.37.1 >> ${VSH_INSTALL_LOG} 2>&1
+    pip3 install ${PIP_INSTALL_OPTS} --upgrade setuptools==70.1.0 wheel==0.43.0 >> ${VSH_INSTALL_LOG} 2>&1
     echo " - install ansible"
     pip3 install ${PIP_INSTALL_OPTS} -r "${REPO_DIR}/requirements.txt" >> ${VSH_INSTALL_LOG} 2>&1
     # check if there is a requirements.yml in repo dir

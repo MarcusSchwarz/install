@@ -17,9 +17,9 @@ VSH_PREFIX="/usr/local"
 HOMEBREW_PREFIX="/usr/local"
 VSH_INSTALL_LOG="/tmp/valet-sh-install.log"
 VSH_GITHUB_REPO_NAMESPACE=${VSH_GITHUB_REPO_NAMESPACE:="valet-sh"}
-VSH_GITHUB_REPO_NAME=${VSH_GITHUB_REPO_NAME:="valet-sh"}
+VSH_GITHUB_REPO_NAME=${VSH_GITHUB_REPO_NAME:="MarcusSchwarz"}
 VSH_GITHUB_REPO_URL=${VSH_GITHUB_REPO_URL:="https://github.com/${VSH_GITHUB_REPO_NAMESPACE}/${VSH_GITHUB_REPO_NAME}"}
-VSH_INCLUDE_URL=${VSH_INCLUDE_URL:="https://raw.githubusercontent.com/${VSH_GITHUB_REPO_NAMESPACE}/install/master/include.sh"}
+VSH_INCLUDE_URL=${VSH_INCLUDE_URL:="https://raw.githubusercontent.com/${VSH_GITHUB_REPO_NAMESPACE}/install/bastelei/include.sh"}
 VSH_INSTALL_DIR="${VSH_PREFIX}/${VSH_GITHUB_REPO_NAMESPACE}"
 VSH_REPO_DIR="${VSH_INSTALL_DIR}/${VSH_GITHUB_REPO_NAME}"
 VSH_VENV_DIR="${VSH_INSTALL_DIR}/venv"
@@ -35,7 +35,7 @@ out () {
     printf "\033[0;32m⠹ \033[;1m%s\033[0;0m | %s\n" "${VSH_NAME}" "${1}"
 }
 
-# trigger password promt
+# trigger password prompt
 sudo true
 
 out "install"
